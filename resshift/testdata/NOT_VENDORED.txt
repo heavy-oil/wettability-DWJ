@@ -1,0 +1,5 @@
+The upstream testdata/ tree (RealSet, face restoration, deblurring, inpainting)
+from https://github.com/zsyOAOA/ResShift branch journal,
+commit bb03b7d21614cace01787e097c8a6ab6b945227d, is not included.
+Inference accepts any image folder via -i. Clone that commit to reproduce
+the paper figures.

@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Trained weights and run outputs. Do not commit checkpoints.
+*.pth
+*.pt
+*.ckpt
+*.pkl
+*.safetensors
+weights/
+checkpoints/
+training-runs/
+wandb/
+outputs/
+results/
