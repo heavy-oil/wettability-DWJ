@@ -10,3 +10,7 @@ Tang Kunning 2025 WRR cascading super-resolution code was intended for the folde
 Ledig et al. did not publish an official Twitter or author GitHub for SRGAN. https://github.com/tensorlayer/srgan (`srgan/`) is a popular community reimplementation of the CVPR 2017 paper.
 
 - ESRGAN (Wang et al., ECCV 2018 workshops) is vendored from https://github.com/xinntao/ESRGAN (`esrgan/`).
+- Torch EDSR+MDSR (Lim et al., NTIRE 2017) is vendored from https://github.com/limbee/NTIRE2017 (`edsr/`).
+- The official PyTorch port, by the same authors and formerly published as thstkdgus35/EDSR-PyTorch, is vendored from https://github.com/sanghyun-son/EDSR-PyTorch (`edsr-pytorch/`).
+
+Ma et al. (TiPM 2025) apply EDSR in a multiphase setting. That paper's code is not included here.
