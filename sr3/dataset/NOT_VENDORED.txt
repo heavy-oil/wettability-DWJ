@@ -1,0 +1,7 @@
+The sample FFHQ / CelebA-HQ crops that ship in
+https://github.com/Janspiry/Image-Super-Resolution-via-Iterative-Refinement
+(commit 01d27a7cbfa8502be1d8dbd4ee02fcbd5e44389d) are not included in this
+snapshot. Those images are face photographs with their own dataset terms.
+Clone that commit and keep dataset/ if you need the authors' demo images.
+Code, configs, LICENSE, and README are vendored. Prepare rock patches with
+sr3/data/prepare_data.py.

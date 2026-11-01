@@ -1,0 +1,7 @@
+Demo photographs and figures from
+https://github.com/zsyOAOA/ResShift (branch journal,
+commit bb03b7d21614cace01787e097c8a6ab6b945227d) are not included.
+The README in that commit links to assets/ and testdata/. Clone the same
+commit if you need those images. Source, configs, and LICENSE are vendored.
+Weights are downloaded by inference_resshift.py from the GitHub release
+and are not stored in this repository.
