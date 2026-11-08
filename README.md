@@ -1,9 +1,11 @@
 # wettability-DWJ
 
-This repository vendors upstream CycleGAN source code for reference.
+This repository vendors upstream CycleGAN source code from Jun-Yan Zhu (`junyanz`) for unpaired image translation. The linked official repository, https://github.com/junyanz/CycleGAN, is the original Lua/Torch implementation. The PyTorch port the same authors maintain is vendored beside it. Both trees are unmodified snapshots of the commits below. Each keeps its upstream `LICENSE` (copyright Jun-Yan Zhu and Taesung Park) and `README.md`.
 
-- PyTorch CycleGAN and pix2pix: https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix (`pytorch-CycleGAN-and-pix2pix/`)
-- Original Torch CycleGAN: https://github.com/junyanz/CycleGAN (`CycleGAN/`)
+- Original Torch CycleGAN: https://github.com/junyanz/CycleGAN at `40b4498526de6b566f94a000d98fe18b9b8921db` (`CycleGAN/`)
+- Maintained PyTorch CycleGAN and pix2pix: https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix at `2a7afba2895d52556dd5dfe07e8555ef657ced6f` (`pytorch-CycleGAN-and-pix2pix/`)
+
+For new runs, use the PyTorch tree. How the unpaired `trainA` / `trainB` layout maps onto μ-CT versus SEM or cryo-EM slices, including the pore-geometry warning, is in [docs/cyclegan-digital-rock.md](docs/cyclegan-digital-rock.md). A one-channel training entry point is `examples/cyclegan_ct_sem.sh`. Confirm the snapshots with `python scripts/verify_cyclegan_upstream.py`.
 
 Tang Kunning 2025 WRR cascading super-resolution code was intended for the folder `tang-cascading-sr/`, but Zenodo record https://doi.org/10.5281/zenodo.15254020 (10.5281/zenodo.15254020) has restricted file access (403), so that folder was not added yet.
 
