@@ -1,0 +1,26 @@
+This directory is a snapshot of the official DBPI code:
+
+  https://github.com/prote376/DBPI-BlindSR
+  commit 5c7702cfd34018ea93576755afe1b0bbc67e7fd6
+  (2020-08-31, "Update README.md")
+
+Jonghee Kim, Chanho Jung, and Changick Kim, "Dual Back-Projection-Based
+Internal Learning for Blind Super-Resolution," IEEE Signal Processing
+Letters, vol. 27, pp. 1190-1194, 2020.
+https://doi.org/10.1109/LSP.2020.3005043
+
+The upstream repository does not contain a LICENSE file. Do not treat
+this snapshot as carrying a license the authors did not grant.
+
+The upstream README states that the code is based on KernelGAN
+(https://github.com/sefibk/KernelGAN). imresize.py in this tree is
+byte-identical to KernelGAN imresize.py. The other Python modules are
+adapted from that repository (same filenames; the networks and the
+training loop are the DBPI changes). KernelGAN is distributed under the
+Weizmann Institute / Yeda academic non-commercial license, copied here
+as KERNELGAN_LICENSE.txt. That file is the KernelGAN license, not a
+LICENSE added by the DBPI authors.
+
+This VENDOR_NOTE.txt was added in wettability-DWJ. It is not part of
+the upstream commit. No pretrained weights are included; DBPI trains
+from the input image.
