@@ -1,0 +1,36 @@
+This directory is a snapshot of the public 2D VDSR reimplementation
+
+  https://github.com/twtygqyy/pytorch-vdsr
+  commit 514b021044018baf909e79f48392783daa592888
+  (2018-03-16, "add generate_test_mat script")
+
+MIT License, copyright Jiu Xu, Rakuten, Inc., and Rakuten Institute of
+Technology. See LICENSE.
+
+It is not the 10-layer 3D z-direction network from Liang, Wang, Feng
+et al., SPE Journal 2024 (SPE 218397). That network was not released.
+See docs/liang2024-fibsem-sr.md.
+
+The following upstream files were left out of this snapshot because
+they are pretrained weights or large binaries. Fetch them from the
+upstream tree if you need the published demo:
+
+  model/model_epoch_50.pth
+    pretrained Set5 demo checkpoint (~2.6 MB)
+    https://github.com/twtygqyy/pytorch-vdsr/blob/514b021044018baf909e79f48392783daa592888/model/model_epoch_50.pth
+
+  data/train.h5
+    sample HDF5 training file (~13 MB). The MATLAB scripts that build
+    it are kept under data/. The 291-image training set linked by the
+    upstream README is
+    https://drive.google.com/open?id=1Rt3asDLuMgLuJvPA1YrhyjWhb97Ly742
+
+  Set5/
+    benchmark BMP images (~7 MB), including butterfly_GT used by
+    demo.py and the README figure.
+
+  Set5_mat/
+    MATLAB evaluation tensors (~72 MB). generate_test_mat.m is kept.
+
+result/input.bmp and result/output.bmp are the small README figures
+and are included. No .pth, .h5, or .mat file is committed here.
